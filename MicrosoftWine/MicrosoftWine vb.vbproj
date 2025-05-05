@@ -6,9 +6,9 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{18993CB0-3134-4161-85C7-509855997143}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>MicrosoftWine.My.MyApplication</StartupObject>
-    <RootNamespace>MicrosoftWine</RootNamespace>
-    <AssemblyName>MicrosoftWine</AssemblyName>
+    <StartupObject>MicrosoftWine_vb.My.MyApplication</StartupObject>
+    <RootNamespace>MicrosoftWine_vb</RootNamespace>
+    <AssemblyName>MicrosoftWine vb</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
@@ -22,7 +22,7 @@
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <OutputPath>bin\Debug\</OutputPath>
-    <DocumentationFile>MicrosoftWine.xml</DocumentationFile>
+    <DocumentationFile>MicrosoftWine vb.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -32,7 +32,7 @@
     <DefineTrace>true</DefineTrace>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
-    <DocumentationFile>MicrosoftWine.xml</DocumentationFile>
+    <DocumentationFile>MicrosoftWine vb.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup>
@@ -84,6 +84,7 @@
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
       <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <Compile Include="My Project\Resources.Designer.vb">
       <AutoGen>True</AutoGen>
