@@ -6,10 +6,10 @@
     Dim textmessage(2, 44) As Array
     '
     Private Sub Form1_LostFocus(sender As Object, e As EventArgs) Handles Me.LostFocus
-        PictureBox_head.Image = Global.MicrosoftWine.My.Resources.Resources.c1_head_off
+        PictureBox_head.Image = Global.MicrosoftWine_vb.My.Resources.Resources.c1_head_off
     End Sub
     Private Sub Form1_GotFocus(sender As Object, e As EventArgs) Handles Me.GotFocus
-        PictureBox_head.Image = MicrosoftWine.My.Resources.Resources.c1_head_on
+        PictureBox_head.Image = MicrosoftWine_vb.My.Resources.Resources.c1_head_on
     End Sub
     Private Sub PictureBox_head_MouseDown(sender As Object, e As MouseEventArgs) Handles PictureBox_head.MouseDown
         P = e.Location
@@ -40,10 +40,10 @@
         End
     End Sub
     Private Sub PictureBox_buttonclose_MouseDown(sender As Object, e As MouseEventArgs) Handles PictureBox_buttonclose.MouseDown
-        PictureBox_buttonclose.Image = MicrosoftWine.My.Resources.Resources.c1_head_butt_down
+        PictureBox_buttonclose.Image = MicrosoftWine_vb.My.Resources.Resources.c1_head_butt_down
     End Sub
     Private Sub PictureBox_buttonclose_MouseUp(sender As Object, e As MouseEventArgs) Handles PictureBox_buttonclose.MouseUp
-        PictureBox_buttonclose.Image = MicrosoftWine.My.Resources.Resources.c1_head_butt_up
+        PictureBox_buttonclose.Image = MicrosoftWine_vb.My.Resources.Resources.c1_head_butt_up
     End Sub
 
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
@@ -63,24 +63,24 @@
 
 
     Private Sub PictureBox_buttonYes_MouseDown(sender As Object, e As MouseEventArgs) Handles PictureBox_buttonYes.MouseDown, Label_YES.MouseDown
-        PictureBox_buttonYes.Image = MicrosoftWine.My.Resources.Resources.c1B_butt_a_down
+        PictureBox_buttonYes.Image = MicrosoftWine_vb.My.Resources.Resources.c1B_butt_a_down
         Label_YES.Location = New Point(Label_YES.Location.X + 1, Label_YES.Location.Y + 1)
-        PictureBox_buttonNo.Image = MicrosoftWine.My.Resources.Resources.c1B_butt
+        PictureBox_buttonNo.Image = MicrosoftWine_vb.My.Resources.Resources.c1B_butt
     End Sub
 
     Private Sub PictureBox_buttonYes_MouseUp(sender As Object, e As MouseEventArgs) Handles PictureBox_buttonYes.MouseUp, Label_YES.MouseUp
-        PictureBox_buttonYes.Image = MicrosoftWine.My.Resources.Resources.c1B_butt_a_up
+        PictureBox_buttonYes.Image = MicrosoftWine_vb.My.Resources.Resources.c1B_butt_a_up
         Label_YES.Location = New Point(Label_YES.Location.X - 1, Label_YES.Location.Y - 1)
     End Sub
     Private Sub PictureBox_buttonno_MouseDown(sender As Object, e As MouseEventArgs) Handles PictureBox_buttonNo.MouseDown, Label_no.MouseDown
-        PictureBox_buttonNo.Image = MicrosoftWine.My.Resources.Resources.c1B_butt_a_down
+        PictureBox_buttonNo.Image = MicrosoftWine_vb.My.Resources.Resources.c1B_butt_a_down
         Label_NO.Location = New Point(Label_NO.Location.X + 1, Label_NO.Location.Y + 1)
-        PictureBox_buttonYes.Image = MicrosoftWine.My.Resources.Resources.c1B_butt
+        PictureBox_buttonYes.Image = MicrosoftWine_vb.My.Resources.Resources.c1B_butt
     End Sub
 
     Private Sub PictureBox_buttonno_MouseUp(sender As Object, e As MouseEventArgs) Handles PictureBox_buttonNo.MouseUp, Label_no.MouseUp
-        PictureBox_buttonNo.Image = MicrosoftWine.My.Resources.Resources.c1B_butt_a_up
-        Label_no.Location = New Point(Label_no.Location.X - 1, Label_no.Location.Y - 1)
+        PictureBox_buttonNo.Image = MicrosoftWine_vb.My.Resources.Resources.c1B_butt_a_up
+        Label_NO.Location = New Point(Label_no.Location.X - 1, Label_no.Location.Y - 1)
     End Sub
     Private Sub Label_YES_Click(sender As Object, e As EventArgs) Handles Label_YES.Click, PictureBox_buttonYes.Click
         MsgBox(i_y)

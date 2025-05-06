@@ -50,7 +50,7 @@ Partial Class Form1
 		'PictureBox_animate
 		'
 		Me.PictureBox_animate.BackColor = System.Drawing.Color.Transparent
-		Me.PictureBox_animate.Image = Global.MicrosoftWine.My.Resources.Resources._3g
+		Me.PictureBox_animate.Image = Global.MicrosoftWine_vb.My.Resources.Resources._3g
 		Me.PictureBox_animate.Location = New System.Drawing.Point(12, 27)
 		Me.PictureBox_animate.Name = "PictureBox_animate"
 		Me.PictureBox_animate.Size = New System.Drawing.Size(272, 60)
@@ -60,7 +60,7 @@ Partial Class Form1
 		'
 		'PictureBox_head
 		'
-		Me.PictureBox_head.BackgroundImage = Global.MicrosoftWine.My.Resources.Resources.c1_head_off
+		Me.PictureBox_head.BackgroundImage = Global.MicrosoftWine_vb.My.Resources.Resources.c1_head_off
 		Me.PictureBox_head.Location = New System.Drawing.Point(1, 3)
 		Me.PictureBox_head.Name = "PictureBox_head"
 		Me.PictureBox_head.Size = New System.Drawing.Size(375, 18)
@@ -70,7 +70,7 @@ Partial Class Form1
 		'PictureBox_pic
 		'
 		Me.PictureBox_pic.BackColor = System.Drawing.Color.Transparent
-		Me.PictureBox_pic.BackgroundImage = Global.MicrosoftWine.My.Resources.Resources._3g_1
+		Me.PictureBox_pic.BackgroundImage = Global.MicrosoftWine_vb.My.Resources.Resources._3g_1
 		Me.PictureBox_pic.Location = New System.Drawing.Point(12, 27)
 		Me.PictureBox_pic.Name = "PictureBox_pic"
 		Me.PictureBox_pic.Size = New System.Drawing.Size(43, 60)
@@ -80,7 +80,7 @@ Partial Class Form1
 		'PictureBox_buttonC
 		'
 		Me.PictureBox_buttonC.BackColor = System.Drawing.Color.FromArgb(CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer))
-		Me.PictureBox_buttonC.Image = Global.MicrosoftWine.My.Resources.Resources.c1_butt
+		Me.PictureBox_buttonC.Image = Global.MicrosoftWine_vb.My.Resources.Resources.c1_butt
 		Me.PictureBox_buttonC.Location = New System.Drawing.Point(309, 127)
 		Me.PictureBox_buttonC.Name = "PictureBox_buttonC"
 		Me.PictureBox_buttonC.Size = New System.Drawing.Size(60, 23)
@@ -90,7 +90,7 @@ Partial Class Form1
 		'
 		'PictureBox_buttonNo
 		'
-		Me.PictureBox_buttonNo.Image = Global.MicrosoftWine.My.Resources.Resources.c1B_butt
+		Me.PictureBox_buttonNo.Image = Global.MicrosoftWine_vb.My.Resources.Resources.c1B_butt
 		Me.PictureBox_buttonNo.Location = New System.Drawing.Point(295, 127)
 		Me.PictureBox_buttonNo.Name = "PictureBox_buttonNo"
 		Me.PictureBox_buttonNo.Size = New System.Drawing.Size(74, 23)
@@ -108,8 +108,8 @@ Partial Class Form1
 		'
 		'PictureBox_buttonclose
 		'
-		Me.PictureBox_buttonclose.BackgroundImage = Global.MicrosoftWine.My.Resources.Resources.c1_head_butt_down
-		Me.PictureBox_buttonclose.Image = Global.MicrosoftWine.My.Resources.Resources.c1_head_butt_up
+		Me.PictureBox_buttonclose.BackgroundImage = Global.MicrosoftWine_vb.My.Resources.Resources.c1_head_butt_down
+		Me.PictureBox_buttonclose.Image = Global.MicrosoftWine_vb.My.Resources.Resources.c1_head_butt_up
 		Me.PictureBox_buttonclose.Location = New System.Drawing.Point(360, 5)
 		Me.PictureBox_buttonclose.Name = "PictureBox_buttonclose"
 		Me.PictureBox_buttonclose.Size = New System.Drawing.Size(16, 14)
@@ -136,7 +136,7 @@ Partial Class Form1
 		'
 		'PictureBox_buttonYes
 		'
-		Me.PictureBox_buttonYes.Image = Global.MicrosoftWine.My.Resources.Resources.c1B_butt
+		Me.PictureBox_buttonYes.Image = Global.MicrosoftWine_vb.My.Resources.Resources.c1B_butt
 		Me.PictureBox_buttonYes.Location = New System.Drawing.Point(210, 127)
 		Me.PictureBox_buttonYes.Name = "PictureBox_buttonYes"
 		Me.PictureBox_buttonYes.Size = New System.Drawing.Size(74, 23)
@@ -191,7 +191,7 @@ Partial Class Form1
 		Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
 		Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
 		Me.BackColor = System.Drawing.Color.Silver
-		Me.BackgroundImage = Global.MicrosoftWine.My.Resources.Resources.c1_body_form
+		Me.BackgroundImage = Global.MicrosoftWine_vb.My.Resources.Resources.c1_body_form
 		Me.ClientSize = New System.Drawing.Size(381, 162)
 		Me.Controls.Add(Me.Label_C)
 		Me.Controls.Add(Me.Label_text)
