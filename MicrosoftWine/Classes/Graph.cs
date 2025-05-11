@@ -6,11 +6,6 @@ using System.Threading.Tasks;
 
 namespace MicrosoftWine
 {
-
-	
-
-	
-
 	class Graph
 	{
 		public List<Node> Nodes;
