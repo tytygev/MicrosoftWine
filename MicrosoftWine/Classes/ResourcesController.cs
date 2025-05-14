@@ -5,17 +5,15 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace MicrosoftWine
+
 {
-    class Controller
+    public class ResourcesController
     {
-        private Graph graph;
-        private PlayerState state;
+        public Dictionary<int, string> ResDic = new Dictionary<int, string>();
 
-        void add()
+        public void AddLine()
         {
-            int id = 0;
 
-            //graph.AddNode(id);
         }
     }
 }

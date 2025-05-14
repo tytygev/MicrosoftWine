@@ -63,11 +63,18 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Classes\Class1.cs" />
     <Compile Include="Classes\Controller.cs" />
+    <Compile Include="Classes\GraphFileReader.cs" />
     <Compile Include="Classes\Graph.cs" />
+    <Compile Include="Classes\IHasLocalizationId.cs" />
     <Compile Include="Classes\Link.cs" />
+    <Compile Include="Classes\LocalizationController.cs" />
     <Compile Include="Classes\Node.cs" />
+    <Compile Include="Classes\Parser.cs" />
     <Compile Include="Classes\PlayerState.cs" />
+    <Compile Include="Classes\ResourcesController.cs" />
+    <Compile Include="Classes\NodeButton.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>

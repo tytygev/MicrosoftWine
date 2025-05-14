@@ -5,17 +5,14 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace MicrosoftWine
-{
-    class Controller
     {
-        private Graph graph;
-        private PlayerState state;
+    public class NodeButton
+    {
+        public string LocalizationId;
 
-        void add()
+        public NodeButton(string localizationId)
         {
-            int id = 0;
-
-            //graph.AddNode(id);
+            LocalizationId = localizationId;
         }
     }
 }

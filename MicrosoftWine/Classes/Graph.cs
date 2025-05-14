@@ -10,8 +10,8 @@ namespace MicrosoftWine
 	{
 		public List<Node> Nodes;
 		public List<Link> Links;
-		
-		public Graph()
+        
+        public Graph()
         {
 
         }
@@ -22,27 +22,29 @@ namespace MicrosoftWine
             Links = links;
         }
 		
-        public void AddNode(int id)
+        public void AddNode(string idЛокализации, List<NodeButton> кнопкиНоды)
 		{
-			var node = new Node(id);
+			Node node = new Node(idЛокализации, кнопкиНоды);
 			Nodes.Add(node);
         }
- 
-        void AddLink()
-		{
-		
-		}
- 
-        public Node FindNextNode(int currentNode, List <Link> current)
-        {
-            Node findNextNode = currentNode;
-            foreach (var a in Links)
-            {
-                if (a.From.Equals(currentNode)) { if (a.LinkMass == inputMass) { return findNextNode; } }
-            }
+        
 
-            return findNextNode;
+        public void AddLink(int откуда, int куда)
+		{
+            Link дуга = new Link(откуда, куда);
+            Links.Add(дуга);
         }
+ 
+        //public Node FindNextNode(int currentNode, List <Link> current)
+        //{
+        //    //Node findNextNode = currentNode;
+        //    //foreach (var a in Links)
+        //    //{
+        //    //    if (a.From.Equals(currentNode)) { if (a.LinkMass == inputMass) { return findNextNode; } }
+        //    //}
+
+        //    //return findNextNode;
+        //}
 
     }
 
