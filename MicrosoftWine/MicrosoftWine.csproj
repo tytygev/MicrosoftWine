@@ -65,7 +65,6 @@
     </Compile>
     <Compile Include="Classes\BuilderGraph.cs" />
     <Compile Include="Classes\Controller.cs" />
-    <Compile Include="Classes\GraphFileReader.cs" />
     <Compile Include="Classes\Graph.cs" />
     <Compile Include="Classes\IHasLocalizationId.cs" />
     <Compile Include="Classes\Link.cs" />
