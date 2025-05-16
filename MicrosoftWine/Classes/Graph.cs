@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MicrosoftWine.ParcerClasses;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -21,7 +22,26 @@ namespace MicrosoftWine
 			Nodes = nodes;
             Links = links;
         }
-		
+        public int GetNodesCount()
+        {
+            return Nodes.Count;
+        }
+        public Node GetNode(int index)
+        {
+            return Nodes[index];
+        }
+
+        public int FindNodeIndex(string nodeLocalizationID)
+        {
+            int index=-1; 
+            for (int i=0;i<Nodes.Count; i++)
+            {
+               if (Nodes[i].LocalizationId == nodeLocalizationID)
+               index=Nodes.IndexOf(Nodes[i]);                                            
+            }
+            return index;
+        }
+
         public void AddNode(string idЛокализации, List<NodeButton> кнопкиНоды)
 		{
 			Node node = new Node(idЛокализации, кнопкиНоды);

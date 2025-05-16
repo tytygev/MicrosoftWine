@@ -45,5 +45,15 @@ namespace MicrosoftWine.ParcerClasses
 
             return this;
         }
+
+        public Word GetNodesLinks(int index)
+        {
+            return NodesLinks[index];
+        }
+
+        public int GetCountNodesLinks()
+        {
+            return NodesLinks.Count;
+        }
     }
 }

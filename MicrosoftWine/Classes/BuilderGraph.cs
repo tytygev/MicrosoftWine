@@ -20,6 +20,7 @@ namespace MicrosoftWine
 
             return graph;
         }
+
         void BuildNodes(Graph graph)
         {
             ParserAdjacencyListFile file = new ParserAdjacencyListFile();
@@ -31,25 +32,24 @@ namespace MicrosoftWine
                 List<NodeButton> buttonsID = adjList.GetLine(i).ButtonsLocalizationSet;
                 graph.AddNode(nodeID, buttonsID);
             }
-
         }
+
         void BuildLinks(Graph graph)
         {
+ParserAdjacencyListFile file = new ParserAdjacencyListFile();
+            AdjListFile adjList = file.Parse();
 
-
+            for (int from = 0; from < graph.GetNodesCount(); from++)
+            {                
+                for (int n = 0; n < adjList.GetLine(from).GetCountNodesLinks(); n++)
+                {
+                    string adjNode = adjList.GetLine(from).GetNodesLinks(n).Text;                                        
+                    int to = graph.FindNodeIndex(adjNode);
+                    graph.AddLink(from, to);
+                }
+            }
         }
 
-        //public List<NodeButton> AddNodeButtons()
-        //{
-        //    List<NodeButton> NodeButtons=new List<NodeButton>();
-        //   return NodeButtons;
-        //}
-        //public void AddButtonsToNode(string ключЛокализации)
-        //{
-        //    List<NodeButton> NodeButtons = new List<NodeButton>();
-        //    NodeButton nodeButt = new NodeButton(ключЛокализации);
-        //    NodeButtons.Add(nodeButt);
-        //}
-
+       
     }
 }
