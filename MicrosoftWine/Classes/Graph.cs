@@ -34,21 +34,5 @@ namespace MicrosoftWine
             Link дуга = new Link(откуда, куда);
             Links.Add(дуга);
         }
- 
-        //public Node FindNextNode(int currentNode, List <Link> current)
-        //{
-        //    //Node findNextNode = currentNode;
-        //    //foreach (var a in Links)
-        //    //{
-        //    //    if (a.From.Equals(currentNode)) { if (a.LinkMass == inputMass) { return findNextNode; } }
-        //    //}
-
-        //    //return findNextNode;
-        //}
-
     }
-
-	
-
-	
 }

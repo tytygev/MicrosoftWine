@@ -11,11 +11,6 @@ namespace MicrosoftWine
         private Graph graph;
         private PlayerState state;
 
-        void add()
-        {
-            int id = 0;
-
-            //graph.AddNode(id);
-        }
+       
     }
 }
