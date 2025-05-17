@@ -5,11 +5,78 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MicrosoftWine"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800" Background="Silver" ClipToBounds="True" WindowStyle="ThreeDBorderWindow" ShowInTaskbar="False" ResizeMode="NoResize">
+        Title="Microsoft Wine" Height="162" Width="381" ResizeMode="NoResize" ScrollViewer.VerticalScrollBarVisibility="Disabled" Grid.IsSharedSizeScope="True" Icon="/wine1.png" WindowStyle="None" BorderBrush="Black" BorderThickness="0,0,1,1" Background="#FFDFDFDF" UseLayoutRounding="False" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" Padding="3,0,0,0">
+    <Window.TaskbarItemInfo>
+        <TaskbarItemInfo/>
+    </Window.TaskbarItemInfo>
     <Window.Effect>
         <DropShadowEffect/>
     </Window.Effect>
-    <Grid>
-        
+    <Grid ClipToBounds="True" ScrollViewer.VerticalScrollBarVisibility="Disabled" Background="Gray" Margin="1,1,0,0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid Margin="0,0,1,1" Background="White">
+            <Grid x:Name="BodyWindow" Margin="1,1,0,0" Background="Silver">
+                <StackPanel>
+                    <Grid x:Name="TitleBar" Height="18" Background="Navy" Width="375" Margin="0,1,0,0">
+                        <Label Content="Microsoft Wine" Foreground="White" FontFamily="Microsoft Sans Serif" Padding="0,0,0,0" Margin="2,2,2,2" FontWeight="Bold"/>
+                        <Grid x:Name="CloseButton" Width="16" Height="14" HorizontalAlignment="Right" Margin="0,0,2,0" Background="Black" RenderTransformOrigin="0.5,0.5">
+                            <Grid.RenderTransform>
+                                <TransformGroup>
+                                    <ScaleTransform/>
+                                    <SkewTransform/>
+                                    <RotateTransform Angle="0"/>
+                                    <TranslateTransform/>
+                                </TransformGroup>
+                            </Grid.RenderTransform>
+                            <Grid Background="White" Margin="0,0,1,1">
+                                <Grid Background="Gray" Margin="1,1,0,0">
+                                    <Grid Background="#FFDFDFDF" Margin="0,0,1,1">
+                                        <Grid Background="Silver" Margin="1,1,0,0">
+                                            <Label Content="x" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="10" Padding="0,0,0,0" Margin="2,1,2,2" d:IsHidden="True"/>
+                                            <Canvas Margin="2,1,2,2" Width="8" Height="7" ClipToBounds="True">
+                                                <Line X1="0" Y1="0" X2="8" Y2="7" Stroke="#FF000000" ClipToBounds="True" />
+                                                <Line X1="0" Y1="7" X2="8" Stroke="#FF000000" ClipToBounds="True" />
+                                            </Canvas>
+                                        </Grid>
+                                    </Grid>
+                                </Grid>
+                            </Grid>
+                        </Grid>
+                    </Grid>
+                    <Grid ScrollViewer.VerticalScrollBarVisibility="Disabled" Margin="10,10,10,10" Height="120">
+                        <StackPanel Height="120">
+                            <Image Source="/3g-1.gif" HorizontalAlignment="Left" VerticalAlignment="Top" Height="43" Width="60" Margin="3,3,3,3"/>
+                            <TextBlock TextWrapping="Wrap" Margin="3,3,3,3" ScrollViewer.VerticalScrollBarVisibility="Disabled" Padding="0,6,0,6" Text="Line1
+                                       
+                                   Line2 "/>
+                            <StackPanel Orientation="Horizontal" VerticalAlignment="Bottom">
+                                <Grid x:Name="ProgressBar" Width="272" Height="13" Background="White" Margin="3,3,3,3" VerticalAlignment="Top">
+                                    <Grid Background="Gray" Margin="0,0,1,1">
+                                        <WrapPanel Background="Silver" Margin="1,1,0,0" ItemHeight="11" ItemWidth="8">
+                                            <Rectangle x:Name="ProgressBarElement" Margin="1,1,1,1" Fill="Navy"/>
+                                        </WrapPanel>
+                                    </Grid>
+                                </Grid>
+                                <WrapPanel ItemHeight="29" ItemWidth="79">
+                                    <Grid x:Name="Button" Margin="3,3,3,3" Background="Black">
+                                        <Grid Background="White" Margin="0,0,1,1">
+                                            <Grid Background="Gray" Margin="1,1,0,0">
+                                                <Grid Background="#FFDFDFDF" Margin="0,0,1,1">
+                                                    <Grid Background="Silver" Margin="1,1,0,0">
+                                                        <Label Content="Cancel" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Agency FB" Padding="0,0,0,0" FontSize="14" FontWeight="SemiBold"/>
+                                                    </Grid>
+                                                </Grid>
+                                            </Grid>
+                                        </Grid>
+                                    </Grid>
+                                </WrapPanel>
+                            </StackPanel>
+                        </StackPanel>
+                    </Grid>
+                </StackPanel>
+            </Grid>
+        </Grid>
     </Grid>
 </Window>
