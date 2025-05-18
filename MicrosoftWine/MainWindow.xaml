@@ -6,11 +6,15 @@
         xmlns:local="clr-namespace:MicrosoftWine"
         mc:Ignorable="d"
         Title="Microsoft Wine" Height="162" Width="381" ResizeMode="NoResize" ScrollViewer.VerticalScrollBarVisibility="Disabled" Grid.IsSharedSizeScope="True" Icon="/wine1.png" WindowStyle="None" BorderBrush="Black" BorderThickness="0,0,1,1" Background="#FFDFDFDF" UseLayoutRounding="False" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" Padding="3,0,0,0">
+    <Window.Resources>
+        <FontFamily x:Key="Ari95">Ari-W9500 Regular</FontFamily>
+        <FontFamily x:Key="Ari95B">Ari-W9500 Bold</FontFamily>
+    </Window.Resources>
     <Window.TaskbarItemInfo>
         <TaskbarItemInfo/>
     </Window.TaskbarItemInfo>
     <Window.Effect>
-        <DropShadowEffect/>
+        <DropShadowEffect BlurRadius="0" Opacity="0.5" RenderingBias="Performance" ShadowDepth="5" Direction="315"/>
     </Window.Effect>
     <Grid ClipToBounds="True" ScrollViewer.VerticalScrollBarVisibility="Disabled" Background="Gray" Margin="1,1,0,0">
         <Grid.ColumnDefinitions>
@@ -20,7 +24,7 @@
             <Grid x:Name="BodyWindow" Margin="1,1,0,0" Background="Silver">
                 <StackPanel>
                     <Grid x:Name="TitleBar" Height="18" Background="Navy" Width="375" Margin="0,1,0,0">
-                        <Label Content="Microsoft Wine" Foreground="White" FontFamily="Microsoft Sans Serif" Padding="0,0,0,0" Margin="2,2,2,2" FontWeight="Bold"/>
+                        <Label Content="Microsoft Wine" Foreground="White" FontFamily="{DynamicResource Ari95B}" Padding="0,0,0,0" Margin="2,0,2,2" VerticalAlignment="Top" FontWeight="Bold"/>
                         <Grid x:Name="CloseButton" Width="16" Height="14" HorizontalAlignment="Right" Margin="0,0,2,0" Background="Black" RenderTransformOrigin="0.5,0.5">
                             <Grid.RenderTransform>
                                 <TransformGroup>
@@ -48,8 +52,8 @@
                     <Grid ScrollViewer.VerticalScrollBarVisibility="Disabled" Margin="10,10,10,10" Height="120">
                         <StackPanel Height="120">
                             <Image Source="/3g-1.gif" HorizontalAlignment="Left" VerticalAlignment="Top" Height="43" Width="60" Margin="3,3,3,3"/>
-                            <TextBlock TextWrapping="Wrap" Margin="3,3,3,3" ScrollViewer.VerticalScrollBarVisibility="Disabled" Padding="0,6,0,6" Text="Line1
-                                       
+                            <TextBlock x:Name="Text" FontFamily="{DynamicResource Ari95}" TextWrapping="Wrap" Margin="3,3,3,3" ScrollViewer.VerticalScrollBarVisibility="Disabled" Padding="0,2,0,2" Text="Line1
+                                                      
                                    Line2 "/>
                             <StackPanel Orientation="Horizontal" VerticalAlignment="Bottom">
                                 <Grid x:Name="ProgressBar" Width="272" Height="13" Background="White" Margin="3,3,3,3" VerticalAlignment="Top">
@@ -65,7 +69,7 @@
                                             <Grid Background="Gray" Margin="1,1,0,0">
                                                 <Grid Background="#FFDFDFDF" Margin="0,0,1,1">
                                                     <Grid Background="Silver" Margin="1,1,0,0">
-                                                        <Label Content="Cancel" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Agency FB" Padding="0,0,0,0" FontSize="14" FontWeight="SemiBold"/>
+                                                        <Label x:Name="ButtonText" Content="Отмена" FontFamily="{DynamicResource Ari95}" Padding="0,0,0,0" FontWeight="SemiBold" HorizontalAlignment="Center" Margin="0,0,0,3" HorizontalContentAlignment="Center" VerticalAlignment="Top"/>
                                                     </Grid>
                                                 </Grid>
                                             </Grid>
