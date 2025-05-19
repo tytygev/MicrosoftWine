@@ -5,11 +5,20 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MicrosoftWine"
         mc:Ignorable="d"
-        Title="BSoD" Background="#FF0100E3" Foreground="White" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" WindowStyle="None" Height="600" Width="800" IsTabStop="False" Cursor="No" WindowState="Maximized" WindowStartupLocation="CenterScreen" SizeToContent="WidthAndHeight" ShowInTaskbar="False" ResizeMode="NoResize">
-    <Grid ScrollViewer.VerticalScrollBarVisibility="Disabled">
+        Title="BSoD" Background="#FF0100E3" Foreground="White" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" WindowStyle="None" IsTabStop="False" Cursor="No" WindowState="Maximized" WindowStartupLocation="CenterScreen" SizeToContent="WidthAndHeight" ShowInTaskbar="False" ResizeMode="NoResize" Visibility="Collapsed">
+    <Grid ScrollViewer.VerticalScrollBarVisibility="Disabled" Width="800" Height="600">
         <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
-            <TextBlock TextWrapping="Wrap" Text="Windows" FontSize="18" FontFamily="Consolas" FontWeight="Bold" HorizontalAlignment="Center" Background="White" Foreground="#FF0100E3"/>
-            <TextBlock TextWrapping="Wrap" Text="Виндовс упился и больше работать не будет. Очень жаль." FontSize="18" FontFamily="Consolas" FontWeight="Bold"/>
+            <TextBlock TextWrapping="Wrap" Text="Windows" FontFamily="basis33" FontWeight="Bold" HorizontalAlignment="Center" Background="White" Foreground="#FF0100E3" Margin="0,0,0,3" FontSize="18"/>
+            <TextBlock TextWrapping="Wrap" Text="Бутылка выполнила недопустимую орерацию и будет закрыта." FontFamily="basis33" FontSize="18" Width="600"/>
+            <TextBlock TextWrapping="Wrap" Text="Виндовс упился по адресу 0хС00000С1 (0хFAC0FAC0) и больше работать не будет. Очень жаль." FontFamily="basis33" FontSize="18" Width="600"/>
+            <TextBlock TextWrapping="Wrap" Text="Вот что вы можете дальше сделать:" FontFamily="basis33" FontSize="18" Width="600"/>
+            <TextBlock TextWrapping="Wrap" Text="                       " FontFamily="basis33" FontSize="18" Width="600"/>
+            <TextBlock TextWrapping="Wrap" Text="* Нажать клавишу any для попытки продолжить работу." FontFamily="basis33" FontSize="18" Width="600"/>
+            <TextBlock TextWrapping="Wrap" Text="* Нажать CTRL+ALT+DEL для перезагрузки компуктера. " FontFamily="basis33" FontSize="18" Width="600"/>
+            <TextBlock TextWrapping="Wrap" Text="  Но все несохраненные данные вы точно потеряете." FontFamily="basis33" FontSize="18" Width="600"/>
+            <TextBlock TextWrapping="Wrap" Text="" FontFamily="basis33" FontSize="18" Width="600"/>
+            <TextBlock TextWrapping="Wrap" Text="Press any key to continue_" FontFamily="basis33" FontSize="18" HorizontalAlignment="Center"/>
+            <TextBlock TextWrapping="Wrap" Text="Press any key to continue " FontFamily="basis33" FontSize="18" HorizontalAlignment="Center" Visibility="Collapsed"/>
         </StackPanel>
     </Grid>
 </Window>
