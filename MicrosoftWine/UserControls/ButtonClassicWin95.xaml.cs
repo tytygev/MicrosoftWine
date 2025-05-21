@@ -17,15 +17,13 @@ using System.Windows.Shapes;
 namespace MicrosoftWine
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// Логика взаимодействия для ButtonClassicWin95.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class ButtonClassicWin95 : Button
     {
-        public MainWindow()
+        public ButtonClassicWin95()
         {
             InitializeComponent();
         }
-
-        
     }
 }

@@ -59,6 +59,14 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="UserControls\ButtonClassicWin95.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\ButtonCloseWin95.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -69,6 +77,12 @@
     </Compile>
     <Compile Include="BSoD.xaml.cs">
       <DependentUpon>BSoD.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ButtonClassicWin95.xaml.cs">
+      <DependentUpon>ButtonClassicWin95.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ButtonCloseWin95.xaml.cs">
+      <DependentUpon>ButtonCloseWin95.xaml</DependentUpon>
     </Compile>
     <Compile Include="graf.cs" />
     <Compile Include="MainWindow.xaml.cs">
@@ -110,6 +124,9 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="3g-1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Themes\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -17,15 +17,18 @@ using System.Windows.Shapes;
 namespace MicrosoftWine
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// Логика взаимодействия для ButtonCloseWin95.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class ButtonCloseWin95 : Button
     {
-        public MainWindow()
+        public ButtonCloseWin95()
         {
             InitializeComponent();
         }
 
-        
+        private void CloseApp(object sender, RoutedEventArgs e)
+        {
+            Process.GetCurrentProcess().Kill();
+        }
     }
 }
