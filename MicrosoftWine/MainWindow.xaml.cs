@@ -13,6 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Windows.Threading;
 
 namespace MicrosoftWine
 {
@@ -21,14 +22,35 @@ namespace MicrosoftWine
     /// </summary>
     public partial class MainWindow : Window
     {
+        private DispatcherTimer timer;
+
         public MainWindow()
         {
             InitializeComponent();
+            timer = new DispatcherTimer();
+            timer.Interval = TimeSpan.FromSeconds(1);
+            timer.Tick += TimerTick;
+            timer.Start();
         }
 
         private void MoveWindow(object sender, MouseButtonEventArgs e)
         {
             this.DragMove();
+        }
+
+        
+
+        private void AddProgressBarSegment(object sender, RoutedEventArgs e)
+        {
+            var segment = new Rectangle();
+            WrapPanel wrapPan = (WrapPanel)this.FindName("ProgressBarWrapPan");
+            wrapPan.Children.Add(segment);
+        }
+        private void TimerTick(object sender, EventArgs e)
+        {
+            var segment = new Rectangle();
+            WrapPanel wrapPan = (WrapPanel)this.FindName("ProgressBarWrapPan");
+            wrapPan.Children.Add(segment);
         }
     }
 }

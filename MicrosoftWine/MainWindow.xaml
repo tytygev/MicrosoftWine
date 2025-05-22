@@ -9,6 +9,11 @@
     <Window.Resources>
         <FontFamily x:Key="Ari95">Ari-W9500 Regular</FontFamily>
         <FontFamily x:Key="Ari95B">Ari-W9500 Bold</FontFamily>
+        <Style x:Key="{x:Type Rectangle}" TargetType="{x:Type Rectangle}">
+            <Setter Property="Margin" Value="1,1,1,1"/>
+            <Setter Property="Fill" Value="Navy"/>
+        </Style>
+       
     </Window.Resources>
     <Window.TaskbarItemInfo>
         <TaskbarItemInfo/>
@@ -43,13 +48,13 @@
                             <StackPanel Orientation="Horizontal" VerticalAlignment="Bottom">
                                 <Grid x:Name="ProgressBar" Width="272" Height="13" Background="White" Margin="3,3,3,3" VerticalAlignment="Top">
                                     <Grid Background="Gray" Margin="0,0,1,1">
-                                        <WrapPanel Background="Silver" Margin="1,1,0,0" ItemHeight="11" ItemWidth="8">
-                                            <Rectangle x:Name="ProgressBarElement" Margin="1,1,1,1" Fill="Navy"/>
+                                        <WrapPanel x:Name="ProgressBarWrapPan" Background="Silver" Margin="1,1,0,0" ItemHeight="11" ItemWidth="8">
+                                            <Rectangle />
                                         </WrapPanel>
                                     </Grid>
                                 </Grid>
                                 <WrapPanel ItemHeight="29" ItemWidth="79" HorizontalAlignment="Right">
-                                    <local:ButtonClassicWin95 HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" Margin="3,3,3,3" MinWidth="73" MinHeight="23" MaxWidth="73" MaxHeight="23"/>
+                                    <local:ButtonClassicWin95 HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" Margin="3,3,3,3" MinWidth="73" MinHeight="23" MaxWidth="73" MaxHeight="23" Click="AddProgressBarSegment"/>
 
                                 </WrapPanel>
                             </StackPanel>
