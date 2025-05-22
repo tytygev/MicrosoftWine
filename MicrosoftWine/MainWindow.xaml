@@ -13,6 +13,16 @@
             <Setter Property="Margin" Value="1,1,1,1"/>
             <Setter Property="Fill" Value="Navy"/>
         </Style>
+        <Style x:Key="{x:Type local:ButtonClassicWin95}" 
+               TargetType="{x:Type local:ButtonClassicWin95}">
+            <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+            <!--<Setter Property="VerticalContentAlignment" Value="Stretch"/>
+            --><Setter Property="Margin" Value="3,3,3,3"/>
+            <Setter Property="MinWidth" Value="73"/>
+            <Setter Property="MinHeight" Value="23"/>
+            <Setter Property="MaxWidth" Value="73"/>
+            <Setter Property="MaxHeight" Value="23"/>
+        </Style>
        
     </Window.Resources>
     <Window.TaskbarItemInfo>
@@ -32,20 +42,18 @@
                           Height="18" 
                           Background="Navy" 
                           Width="375" 
-                          Margin="0,1,0,0" MouseLeftButtonDown="MoveWindow"
-                          >
-                        <Label Content="Microsoft Wine" Foreground="White" FontFamily="{DynamicResource Ari95B}" Padding="0,0,0,0" Margin="2,0,2,2" VerticalAlignment="Top" FontWeight="Bold" HorizontalAlignment="Left"/>
-                        <local:ButtonCloseWin95 Width="16" Height="14" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="2,2,2,2" RenderTransformOrigin="0.5,0.5">
-
-                        </local:ButtonCloseWin95>
+                          Margin="0,1,0,0" MouseLeftButtonDown="MoveWindow"                          >
+                        <Label Content="Microsoft Wine" Foreground="White" FontFamily="{DynamicResource Ari95B}" Padding="0,0,0,0" Margin="2,1,2,2" VerticalAlignment="Top" FontWeight="Bold" HorizontalAlignment="Left" FontSize="11"/>
+                        <local:ButtonCloseWin95 Width="16" Height="14" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="2,2,2,2" RenderTransformOrigin="0.5,0.5"/>
                     </Grid>
-                    <Grid ScrollViewer.VerticalScrollBarVisibility="Disabled" Margin="10,10,10,10" Height="120">
+                    <Grid ScrollViewer.VerticalScrollBarVisibility="Disabled" Margin="10,3,10,10" Height="127" VerticalAlignment="Top">
                         <StackPanel Height="120">
-                            <Image Source="/3g-1.gif" HorizontalAlignment="Left" VerticalAlignment="Top" Height="43" Width="60" Margin="3,3,3,3"/>
-                            <TextBlock x:Name="Text" FontFamily="{DynamicResource Ari95}" TextWrapping="Wrap" Margin="3,3,3,3" ScrollViewer.VerticalScrollBarVisibility="Disabled" Padding="0,2,0,2" Text="Line1
+                            <Image Source="/3g.gif" HorizontalAlignment="Left" VerticalAlignment="Top" Height="60" Margin="3,0,3,0" Width="273"/>
+                            <TextBlock x:Name="Text" TextWrapping="Wrap" Margin="3,3,3,3" ScrollViewer.VerticalScrollBarVisibility="Disabled" Text="Line1
                                                          
-                                   Line2 " />
-                            <StackPanel Orientation="Horizontal" VerticalAlignment="Bottom">
+                                       
+                                   Line2 " FontSize="11" FontFamily="Ari-W9500" FontWeight="Regular" />
+                            <StackPanel Orientation="Horizontal" VerticalAlignment="Bottom" HorizontalAlignment="Right">
                                 <Grid x:Name="ProgressBar" Width="272" Height="13" Background="White" Margin="3,3,3,3" VerticalAlignment="Top">
                                     <Grid Background="Gray" Margin="0,0,1,1">
                                         <WrapPanel x:Name="ProgressBarWrapPan" Background="Silver" Margin="1,1,0,0" ItemHeight="11" ItemWidth="8">
@@ -53,9 +61,8 @@
                                         </WrapPanel>
                                     </Grid>
                                 </Grid>
-                                <WrapPanel ItemHeight="29" ItemWidth="79" HorizontalAlignment="Right">
-                                    <local:ButtonClassicWin95 HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" Margin="3,3,3,3" MinWidth="73" MinHeight="23" MaxWidth="73" MaxHeight="23" Click="AddProgressBarSegment"/>
-
+                                <WrapPanel x:Name="ButtonPanel" ItemHeight="29" ItemWidth="79" HorizontalAlignment="Right">
+                                    <local:ButtonClassicWin95 Click="AddButt" />
                                 </WrapPanel>
                             </StackPanel>
                         </StackPanel>

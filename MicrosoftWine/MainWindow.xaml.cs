@@ -52,5 +52,12 @@ namespace MicrosoftWine
             WrapPanel wrapPan = (WrapPanel)this.FindName("ProgressBarWrapPan");
             wrapPan.Children.Add(segment);
         }
+
+        private void AddButt(object sender, RoutedEventArgs e)
+        {
+            var butt=new ButtonClassicWin95();
+            WrapPanel wrapPan = (WrapPanel)this.FindName("ButtonPanel");
+            wrapPan.Children.Add(butt);
+        }
     }
 }

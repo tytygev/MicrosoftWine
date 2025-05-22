@@ -15,7 +15,7 @@
 		Background="{x:Null}" 
 		BorderBrush="{x:Null}" 
 		BorderThickness="0,0,0,0" 
-	   
+	    Margin="3,3,3,3"
 		
 		>
 	<Button.RenderTransform>
@@ -49,7 +49,7 @@
 	</Button.Style>
 	
 
-	<Grid x:Name="Button" Background="Black">
+	<Grid x:Name="Button" Background="Black" MinHeight="23" MaxHeight="23" MaxWidth="73" MinWidth="73">
 		<Grid Background="White" Margin="0,0,1,1">
 			<Grid Background="Gray" Margin="1,1,0,0">
 				<Grid Background="#FFDFDFDF" Margin="0,0,1,1">
@@ -60,7 +60,7 @@
 							   FontFamily="Ari-W9500" 
 							   RenderTransformOrigin="0.5,0.5" 
                                HorizontalAlignment="Center" 
-                               VerticalAlignment="Center">
+                               VerticalAlignment="Center" FontSize="11" FontWeight="Regular">
                             <!--Margin="3,-3,3,0" -->
                             <Label.RenderTransform>
 								<TransformGroup>

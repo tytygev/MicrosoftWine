@@ -128,5 +128,8 @@
   <ItemGroup>
     <Folder Include="Themes\" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="3g.gif" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
